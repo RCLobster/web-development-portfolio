@@ -1,6 +1,7 @@
 :root {
     --white: white;
     --borderColor: rgb(100, 178, 255);
+    --backgroundColor: rgb(252, 230, 208);
 }
 
 * {
@@ -8,12 +9,16 @@
     padding: 0;
 
     border-style: border-box;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    /* background-color: rgb(188, 188, 188); */
 }
 
 header {
     margin: 10px;
     padding: 10px;
+    background-color: var(--backgroundColor);
+    border-bottom: 5px var(--borderColor) solid;
 }
 
 h1 {
@@ -22,19 +27,23 @@ h1 {
 
 header nav {
     float: right;
-    margin: 10px 10px;
-    padding: 5px;
+    margin: -30px 10px;
+    padding: 5px 5px;
+    background-color: var(--backgroundColor);
 }
 
 nav a {
     text-decoration: none;
-    margin-right: 10px;
+    /* margin-right: 10px; */
+    margin: auto 3px;
+    padding: 2px 3px;
 }
 
 header li {
     list-style-type: none;
     display: inline-block;
     border-bottom: 2px var(--borderColor) solid;
+
 }
 
 main {
