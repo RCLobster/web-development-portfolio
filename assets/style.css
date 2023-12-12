@@ -1,5 +1,6 @@
 :root {
     --white: white;
+    --borderColor: rgb(100, 178, 255);
 }
 
 * {
@@ -7,18 +8,20 @@
     padding: 0;
 
     border-style: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
 header {
     text-align: center;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+}
+
+header nav {
+    float: right;
 }
 
 main {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     flex-direction: column;
 }
 
@@ -26,10 +29,11 @@ a {
     text-decoration: none;
 }
 
-aside {
+aside section {
     flex: 1 0 25%;
+    width: 15%;
+    border-right: 2px var(--borderColor) solid;
+    text-align: right;
+    margin: 5px 0px;
+    padding-right: 10px;
 }
-
-/* .header li {
-    flex: 1 0 25%;
-} */
