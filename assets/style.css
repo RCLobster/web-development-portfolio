@@ -53,17 +53,13 @@ main {
 }
 
 aside {
-    width: 15%;
+    width: 10%;
     flex-direction: column;
+    text-align: right;
+    margin: 0px 10px 0px 0px;
     border-right: 2px var(--borderColor) solid;
     margin: 5px 0px;
     padding-right: 10px;
-}
-
-aside section {
-
-    width: 100%;
-    text-align: right;
 }
 
 .card {
@@ -72,8 +68,13 @@ aside section {
 
     margin: 5px auto;
     padding: 5px;
-    width: 80%;
-    border: 1px var(--borderColor) solid;
+    width: 96%;
+    /* border-top: 2px var(--borderColor) solid; */
+    border-bottom: 2px var(--borderColor) solid;
+}
+
+.card p {
+    margin-left: 10px 10px;
 }
 
 /* #aboutMe {
@@ -82,4 +83,6 @@ aside section {
 
 #imgOfMe {
     height: 500px;
+    margin: 10px;
+    
 }
