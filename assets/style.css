@@ -49,14 +49,37 @@ header li {
 main {
     display: flex;
     flex-wrap: wrap;
+
+}
+
+aside {
+    width: 15%;
     flex-direction: column;
+    border-right: 2px var(--borderColor) solid;
+    margin: 5px 0px;
+    padding-right: 10px;
 }
 
 aside section {
-    flex: 1 0 25%;
-    width: 15%;
-    border-right: 2px var(--borderColor) solid;
+
+    width: 100%;
     text-align: right;
-    margin: 5px 0px;
-    padding-right: 10px;
+}
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+
+    margin: 5px auto;
+    padding: 5px;
+    width: 80%;
+    border: 1px var(--borderColor) solid;
+}
+
+/* #aboutMe {
+    
+} */
+
+#imgOfMe {
+    height: 500px;
 }
