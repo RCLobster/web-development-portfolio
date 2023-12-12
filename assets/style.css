@@ -1,0 +1,35 @@
+:root {
+    --white: white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+
+    border-style: border-box;
+}
+
+header {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+main {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+}
+
+aside {
+    flex: 1 0 25%;
+}
+
+/* .header li {
+    flex: 1 0 25%;
+} */
