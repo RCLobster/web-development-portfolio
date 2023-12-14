@@ -26,6 +26,10 @@ h1 {
     text-align: center;
 }
 
+h2{
+    font-size: 150%;
+}
+
 nav ul{
     display: flex;
     justify-content: space-between;
@@ -76,12 +80,13 @@ aside {
     flex-wrap: wrap;
 
     padding: 5px;
-    width: 96%;
+    width: 100%;
     border-bottom: 2px var(--borderColor) solid;
 }
     
 .card p {
     flex: 1 0 60%;
+    padding: 10px;
 }
 
 .IMGcard {
@@ -89,12 +94,16 @@ aside {
     margin: 10px;
 }
 
-#imgOfMe {
+.sectionIMG {
     width: 100%;
     
 }
 
 @media screen and (max-width: 768px) {
+    header {
+        justify-content: center;
+    }
+    
     header li {
         flex-direction: column;
     }
