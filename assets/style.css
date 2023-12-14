@@ -18,6 +18,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     padding: 2%;
     background-color: var(--backgroundColor);
     border-bottom: 5px var(--borderColor) solid;
@@ -55,16 +56,14 @@ header li {
 main {
     display: flex;
     flex-wrap: wrap;
-    
 }
 
 aside {
-    width: 10%;
+    flex: 1 0 10%;
     flex-direction: column;
     text-align: right;
-    margin: 0px 10px 0px 0px;
+    /* margin: 0px 10px 0px 0px; */
     border-right: 2px var(--borderColor) solid;
-    margin: 5px 0px;
     padding-right: 10px;
 }
 
@@ -84,32 +83,48 @@ aside {
 
 .card {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
 
-    margin: 5px auto;
     padding: 5px;
     width: 96%;
     /* border-top: 2px var(--borderColor) solid; */
     border-bottom: 2px var(--borderColor) solid;
 }
-
+    
 .card p {
-    margin-left: 10px 10px;
+    flex: 1 0 60%;
+}
+
+.IMGcard {
+    flex: 1 0 5%;
+    margin: 10px;
 }
 
 #imgOfMe {
-    height: 500px;
-    margin: 10px;
+    width: 100%;
     
 }
 
 @media screen and (max-width: 992px) {
     header li {
         flex-direction: column;
+    }
 
+    aside {
+        text-align: center;
+        flex: 1 0 98%
     }
     
-    .card {
-        flex: 1 0 80%;
+    .card p {
+        flex: 1 0 98%;
+        text-align: center;
+    }
+    
+    .IMGcard {
+        flex: 1 0 98%;
     }
 }
+
+/* @media screen and (max-width: 768px) {
+
+} */
