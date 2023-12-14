@@ -10,8 +10,6 @@
 
     border-style: border-box;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
-    /* background-color: rgb(188, 188, 188); */
 }
 
 header {
@@ -32,10 +30,6 @@ nav ul{
     display: flex;
     justify-content: space-between;
     min-width: 300px;
-    /*float: right;
-    margin: -30px 10px;
-    padding: 5px 5px;
-    background-color: var(--backgroundColor); */
 }
 
 nav a {
@@ -48,9 +42,6 @@ nav a {
 
 header li {
     list-style-type: none;
-    /* display: inline-block; */
-    /* border-bottom: 2px var(--borderColor) solid; */
-    
 }
 
 main {
@@ -62,7 +53,6 @@ aside {
     flex: 1 0 10%;
     flex-direction: column;
     text-align: right;
-    /* margin: 0px 10px 0px 0px; */
     border-right: 2px var(--borderColor) solid;
     padding-right: 10px;
 }
@@ -87,7 +77,6 @@ aside {
 
     padding: 5px;
     width: 96%;
-    /* border-top: 2px var(--borderColor) solid; */
     border-bottom: 2px var(--borderColor) solid;
 }
     
