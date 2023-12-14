@@ -15,8 +15,10 @@
 }
 
 header {
-    margin: 10px;
-    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2%;
     background-color: var(--backgroundColor);
     border-bottom: 5px var(--borderColor) solid;
 }
@@ -25,16 +27,19 @@ h1 {
     text-align: center;
 }
 
-header nav {
-    float: right;
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    min-width: 300px;
+    /*float: right;
     margin: -30px 10px;
     padding: 5px 5px;
-    /* background-color: var(--backgroundColor); */
+    background-color: var(--backgroundColor); */
 }
 
 nav a {
     text-decoration: none;
-    /* margin-right: 10px; */
+    margin-right: 10px;
     margin: auto 3px;
     padding: 2px 3px;
 }
@@ -42,7 +47,7 @@ nav a {
 
 header li {
     list-style-type: none;
-    display: inline-block;
+    /* display: inline-block; */
     /* border-bottom: 2px var(--borderColor) solid; */
     
 }
@@ -79,7 +84,7 @@ aside {
 
 .card {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 
     margin: 5px auto;
     padding: 5px;
@@ -96,4 +101,15 @@ aside {
     height: 500px;
     margin: 10px;
     
+}
+
+@media screen and (max-width: 992px) {
+    header li {
+        flex-direction: column;
+
+    }
+    
+    .card {
+        flex: 1 0 80%;
+    }
 }
