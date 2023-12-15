@@ -54,12 +54,14 @@ li {
 
 main {
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
 }
 
 aside {
-    flex: 1 0 5%;
-    flex-direction: column;
+    /* flex: 1 0 5%;
+    flex-direction: column; */
+    width: 10%;
     text-align: right;
     
     padding: 10px 10px 0 0;
@@ -88,7 +90,7 @@ p {
 
 .card {
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 
     padding: 5px;
     width: 100%;
@@ -96,36 +98,48 @@ p {
 }
 
 .card p {
-    flex: 1 0 60%;
-
+    /* flex: 1 0 60%; */
+    width: 60%;
 }
 
 .card ul {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
 }
 
-.card ul li {
+.card ul li p {
     flex: 1 0 60%;
 }
 
 .IMGcard {
-    flex: 1 0 5%;
+    /* flex: 1 0 5%; */
+    
     margin: 10px;
 }
 
 .sectionIMG {
-    width: 100%;
+    /* width: 100%; */
+    width: 400px;
+
 }
 
 .workImgCard {
-    flex: 1 0 75%;
+    /* flex: 1 0 75%;
     margin: 0px;
     display: flex;
-    flex-wrap: wrap;
-    /* justify-content: center; */
+    flex-wrap: wrap; */
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+}
+
+.firstWorkImg {
+    width: 100px;
+    /* height: 100px; */
 }
 
 .workImgCard ul li a {
@@ -139,9 +153,16 @@ p {
 }
 
 .workIMG {
-    flex: 1 0 25%;
-    margin: 10px;
+    /* flex: 1 0 25%; */
+    width: 350px;
+    height: 350px;
+    /* margin: 10px; */
 }
+
+.subImgs {
+    display: flex;
+}
+
 
 @media screen and (max-width: 768px) {
     header {
@@ -154,25 +175,28 @@ p {
 
     aside {
         text-align: center;
-        flex: 1 0 98%;
+        width: 100%;
         border-right: 0px;
     }
 
     .card {
-        flex: 1 0 98%;
+        /* flex: 1 0 98%; */
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     
     .card p {
-        flex: 1 0 98%;
+        /* flex: 1 0 98%; */
         text-align: center;
     }
     
     .IMGcard {
-        flex: 1 0 98%;
+        /* flex: 1 0 98%; */
     }
 
     .workImgCard {
-        flex: 1 0 98%;
+        /* flex: 1 0 98%; */
     }
 }
 
