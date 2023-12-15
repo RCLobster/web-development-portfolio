@@ -1,7 +1,10 @@
 :root {
     --white: white;
-    --borderColor: rgb(100, 178, 255);
-    --backgroundColor: rgb(252, 230, 208);
+    --black: black;
+    --borderColor: #64b2ff;
+    --backgroundColor: #ffe1c7;
+    --textColor: #826963;
+    --cardColor: #67D6E1;
 }
 
 * {
@@ -10,6 +13,7 @@
 
     border-style: border-box;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--backgroundColor);
 }
 
 header {
@@ -54,11 +58,17 @@ main {
 }
 
 aside {
-    flex: 1 0 10%;
+    flex: 1 0 5%;
     flex-direction: column;
     text-align: right;
+    
+    padding: 10px 10px 0 0;
     border-right: 2px var(--borderColor) solid;
-    padding-right: 10px;
+    background-color: (var(--cardColor));
+}
+
+p {
+    color: var(--textColor);
 }
 
 .navHover {
@@ -83,7 +93,7 @@ aside {
     width: 100%;
     border-bottom: 2px var(--borderColor) solid;
 }
-    
+
 .card p {
     flex: 1 0 60%;
     padding: 10px;
