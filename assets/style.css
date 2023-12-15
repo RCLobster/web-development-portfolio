@@ -91,6 +91,7 @@ p {
 .card {
     display: flex;
     /* flex-wrap: wrap; */
+    /* flex-direction: column; */
 
     padding: 5px;
     width: 100%;
@@ -100,6 +101,7 @@ p {
 .card p {
     /* flex: 1 0 60%; */
     width: 60%;
+    text-align: center;
 }
 
 .card ul {
@@ -137,8 +139,10 @@ p {
     width: 90%;
 }
 
+/* nothing in the below class affects the img this class is on... why? */
 .firstWorkImg {
-    width: 100px;
+    width: 900px;
+    /* width: 75%; */
     /* height: 100px; */
 }
 
@@ -154,13 +158,19 @@ p {
 
 .workIMG {
     /* flex: 1 0 25%; */
+
     width: 350px;
     height: 350px;
-    /* margin: 10px; */
+
+    margin: 10px;
 }
 
 .subImgs {
     display: flex;
+}
+
+.resumeIMG {
+    width: 700px;
 }
 
 
@@ -171,6 +181,10 @@ p {
     
     header li {
         flex-direction: column;
+    }
+
+    nav ul {
+        
     }
 
     aside {
