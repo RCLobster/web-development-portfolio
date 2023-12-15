@@ -140,8 +140,8 @@ p {
 }
 
 /* nothing in the below class affects the img this class is on... why? */
-.firstWorkImg {
-    width: 900px;
+.firstWorkIMG {
+    width: 725px;
     /* width: 75%; */
     /* height: 100px; */
 }
@@ -177,14 +177,14 @@ p {
 @media screen and (max-width: 768px) {
     header {
         justify-content: center;
-    }
+            }
     
     header li {
         flex-direction: column;
     }
 
-    nav ul {
-        
+    h1, nav  {
+        flex-basis: 100%;
     }
 
     aside {
