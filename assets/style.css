@@ -69,6 +69,7 @@ aside {
 
 p {
     color: var(--textColor);
+    padding: 10px;
 }
 
 .navHover {
@@ -96,7 +97,7 @@ p {
 
 .card p {
     flex: 1 0 60%;
-    padding: 10px;
+
 }
 
 .IMGcard {
@@ -106,7 +107,19 @@ p {
 
 .sectionIMG {
     width: 100%;
-    
+}
+
+.workImgCard {
+    flex: 1 0 75%;
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+}
+
+.workIMG {
+    flex: 1 0 10%;
+    margin: 10px;
 }
 
 @media screen and (max-width: 768px) {
@@ -120,7 +133,12 @@ p {
 
     aside {
         text-align: center;
-        flex: 1 0 98%
+        flex: 1 0 98%;
+        border-right: 0px;
+    }
+
+    .card {
+        flex: 1 0 98%;
     }
     
     .card p {
@@ -129,6 +147,10 @@ p {
     }
     
     .IMGcard {
+        flex: 1 0 98%;
+    }
+
+    .workImgCard {
         flex: 1 0 98%;
     }
 }
